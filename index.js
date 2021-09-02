@@ -32,6 +32,14 @@ const start = () => {
            case 'Add Roles':
                addRole();
                break;
+           case 'Add Departments':
+               addDepartment();
+               break;
+           case 'Update Employee Roles':
+               updateRole();
+               break;
+                    
+
         }
     })
 }

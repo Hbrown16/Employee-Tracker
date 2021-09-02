@@ -38,7 +38,12 @@ const start = () => {
            case 'Update Employee Roles':
                updateRole();
                break;
-                    
+           case "View Departments, Roles, or Employees?":
+               viewAll();
+               break;
+           case 'Delete Employee':
+               deleteEmployee();
+               break;             
 
         }
     })

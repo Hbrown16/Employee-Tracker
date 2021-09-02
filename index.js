@@ -24,4 +24,9 @@ const start = () => {
             "Exit",
         ],
     })
+    .then((answer) => {
+        switch (answer.action) {
+            
+        }
+    })
 }

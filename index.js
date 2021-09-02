@@ -26,7 +26,9 @@ const start = () => {
     })
     .then((answer) => {
         switch (answer.action) {
-            
+           case "Add Employees":
+               addEmployee();
+               break; 
         }
     })
 }

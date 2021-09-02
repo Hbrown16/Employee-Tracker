@@ -14,5 +14,14 @@ const start = () => {
         name: 'action',
         type: 'list',
         message: 'Welcome what would you like to do?',
+        choices: [
+            'Add Employee',
+            "Add Roles",
+            "Add Departments",
+            "View Departments, Roles, or Employees?",
+            "Update Employee Roles",
+            "Delete Employee",
+            "Exit",
+        ],
     })
 }

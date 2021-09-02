@@ -1,4 +1,5 @@
 const inquirer = require('inquirer');
+const { type } = require('os');
 const { start } = require('repl');
 const connection = require('./config/connect');
 
@@ -53,3 +54,14 @@ const start = () => {
         }
     });
 };
+
+const addEmployee = () => {
+    inquirer
+     .prompt([
+         {
+             name: 'firstName',
+             type: 'input',
+             message: 'What is the Employees first name?',
+         },
+     ])
+}

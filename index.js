@@ -43,8 +43,13 @@ const start = () => {
                break;
            case 'Delete Employee':
                deleteEmployee();
-               break;             
+               break;
+           case 'Exit':
+               connection.end();
+               break;
+           default:
+               console.log(`Inadequte Action: ${answer.action}`);                  
 
         }
-    })
-}
+    });
+};

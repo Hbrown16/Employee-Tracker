@@ -29,6 +29,9 @@ const start = () => {
            case "Add Employees":
                addEmployee();
                break; 
+           case 'Add Roles':
+               addRole();
+               break;
         }
     })
 }

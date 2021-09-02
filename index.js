@@ -63,5 +63,13 @@ const addEmployee = () => {
              type: 'input',
              message: 'What is the Employees first name?',
          },
+         {
+             name: 'lastName',
+             type: 'input',
+             message: 'What is the employees last name?',
+         },
+         {
+             name;
+         }
      ])
 }

@@ -69,7 +69,9 @@ const addEmployee = () => {
              message: 'What is the employees last name?',
          },
          {
-             name;
+             name: 'roleId',
+             type: 'list',
+             message: 'What is the role of the employee? '
          }
      ])
 }

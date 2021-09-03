@@ -112,7 +112,17 @@ const addRole = () => {
                 message: "What is their salary?"
             },
             {
-                
-            } 
+                name: 'departmentId',
+                type: 'list',
+                message: 'What is their department',
+                choices: [
+                    'Application Developer',
+                    'Cyber Security Analyst',
+                    'IT Specialist',
+                    'Software Developer',
+                    'Hardware Developer',
+                    'Manager',
+                ]
+            }, 
         ])
 }

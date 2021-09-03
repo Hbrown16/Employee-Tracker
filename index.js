@@ -156,10 +156,13 @@ const addDepartment = () => {
                 {
                     deprtment_name: answer.department,
                 },
-                (err)    
-                })
-        })
-}
+                (err) => {
+                    if (err) throw err;
+                    console.log("Department added Successful");
+                    start();
+                });
+        });
+};
 const viewAll = () => {
     
 }

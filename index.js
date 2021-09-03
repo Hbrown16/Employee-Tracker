@@ -172,6 +172,8 @@ const viewAll = () => {
         res.forEach(({first_name, lst_name, role_id}) => {
             console.log(`FirstName: ${first_name} | LstName: ${lst_name} | RoleId: ${role_id}`);
         });
-        
-    })    
+        console.log('--------');
+    });
+    
+    
 }

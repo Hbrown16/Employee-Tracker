@@ -151,7 +151,11 @@ const addDepartment = () => {
             },
         ])
         .then((answer) => {
-            const query
+            const query = 'INSERT INTO department SET?';
+            connection.query(query,
+                {
+                    
+                })
         })
 }
 const viewAll = () => {

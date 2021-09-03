@@ -150,6 +150,9 @@ const addDepartment = () => {
                 message: 'Department Title?'
             },
         ])
+        .then((answer) => {
+            const query
+        })
 }
 const viewAll = () => {
     

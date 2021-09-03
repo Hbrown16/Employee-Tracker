@@ -97,3 +97,12 @@ const addEmployee = () => {
         });
      });
 };
+
+const addRole = () => {
+    inquirer
+        .prompt([
+            {
+                
+            }
+        ])
+}

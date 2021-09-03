@@ -126,6 +126,6 @@ const addRole = () => {
             }, 
         ])
         .then((answer => {
-            
+            const query = 'INSERT INTO employeeRole SET?';
         }))
 }

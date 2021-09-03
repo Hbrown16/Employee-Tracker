@@ -125,7 +125,7 @@ const addRole = () => {
                 ]
             }, 
         ])
-        .then((answer => {
+        .then((answer) => {
             const query = 'INSERT INTO employeeRole SET?';
             connnection.query(query,
                 {
@@ -133,7 +133,10 @@ const addRole = () => {
                     salary: answer.salary,
                     department_id: answer.departmentId,
                 },
-                (err)
-                })
-        }))
-}
+                (err) => {
+                    if (err) throw err;
+                    console.log("Role added Successful");
+                    start();
+                });
+        });
+};

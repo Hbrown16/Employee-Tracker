@@ -142,7 +142,14 @@ const addRole = () => {
 };
 
 const addDepartment = () => {
-    
+    inquirer
+        .prompt([
+            {
+                name: 'department',
+                type: 'input',
+                message: 'Department Title?'
+            },
+        ])
 }
 const viewAll = () => {
     

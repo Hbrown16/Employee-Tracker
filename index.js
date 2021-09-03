@@ -71,7 +71,16 @@ const addEmployee = () => {
          {
              name: 'roleId',
              type: 'list',
-             message: 'What is the role of the employee? '
-         }
+             message: 'What is the role of the employee?',
+             choices: [
+                 'Application Developer',
+                 'Cyber Security Analyst',
+                 'IT Specialist',
+                 'Software Developer',
+                 'Hardware Developer',
+                 'Manager',
+             ]
+         },
      ])
+     .
 }

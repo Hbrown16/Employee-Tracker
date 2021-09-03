@@ -181,7 +181,8 @@ const viewAll = () => {
         res.forEach(({ department_name}) => {
             console.log(`DepartmentName: ${deparment_name}`);
         });
-            
-        })
-    
-}
+        console.log('--------');
+        console.log('\n');
+    });
+    start();
+};

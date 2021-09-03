@@ -102,7 +102,10 @@ const addRole = () => {
     inquirer
         .prompt([
             {
-                
-            }
+                name: 'title',
+                type: 'input',
+                message: 'Title?',
+            },
+            
         ])
 }

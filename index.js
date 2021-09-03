@@ -154,7 +154,9 @@ const addDepartment = () => {
             const query = 'INSERT INTO department SET?';
             connection.query(query,
                 {
-                    
+                    deprtment_name: answer.department,
+                },
+                (err)    
                 })
         })
 }

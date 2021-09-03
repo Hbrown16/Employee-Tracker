@@ -142,9 +142,5 @@ const addRole = () => {
 };
 
 const viewAll = () => {
-    const query = 'INSERT INTO department SET?';
-    connection.query(query,
-        {
-            
-        })
+    
 }

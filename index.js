@@ -174,6 +174,9 @@ const viewAll = () => {
         });
         console.log('--------');
     });
-    
+        connection.query('SELECT * FROM employeeRole' (err, res) => {
+        if (err) throw err;
+            
+        })
     
 }

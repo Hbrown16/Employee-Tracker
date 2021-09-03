@@ -89,6 +89,11 @@ const addEmployee = () => {
                 first_name: answer.firstName,
                 lst_name: answer.lastName,
                 role_id: answer.roleId,
-            }),
-     })
-}
+            },
+            (err) => {
+            if (err) throw err;
+            console.log("Employee added Successful");
+            start();
+        });
+     });
+};

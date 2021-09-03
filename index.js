@@ -106,6 +106,13 @@ const addRole = () => {
                 type: 'input',
                 message: 'Title?',
             },
-            
+            {
+                name: 'salary',
+                type: 'input',
+                message: "What is their salary?"
+            },
+            {
+                
+            } 
         ])
 }

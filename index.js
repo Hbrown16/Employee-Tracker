@@ -174,7 +174,7 @@ const viewAll = () => {
         });
         console.log('--------');
     });
-        connection.query('SELECT * FROM employeeRole' (err, res) => {
+        connection.query('SELECT * FROM department', (err, res) => {
         if (err) throw err;
         console.log('\n');;
         console.log('----Departments----');
@@ -184,5 +184,4 @@ const viewAll = () => {
         console.log('--------');
         console.log('\n');
     });
-    start();
 };

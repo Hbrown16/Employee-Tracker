@@ -140,3 +140,7 @@ const addRole = () => {
                 });
         });
 };
+
+const viewAll = () => {
+    connection.query()
+}

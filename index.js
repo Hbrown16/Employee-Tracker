@@ -84,5 +84,11 @@ const addEmployee = () => {
      ])
      .then((answer) => {
          const query = 'INSERT INTO employee SET?';
+         connection.query(query,
+            {
+                first_name: answer.firstName,
+                lst_name: answer.lastName,
+                role_id: answer.roleId,
+            }),
      })
 }

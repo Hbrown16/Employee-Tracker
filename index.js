@@ -187,6 +187,7 @@ const viewAll = () => {
 
     connection.query('SELECT * FROM employeeRole', (err, res) => {
     if (err) throw err;
-    console.log('----Roles----');    
+    console.log('----Roles----');
+    res.forEach(({ title, salary, department_id}) => )    
     })
 };

@@ -191,6 +191,8 @@ const viewAll = () => {
     res.forEach(({ title, salary, department_id}) => {
         console.log(`Title: ${title} | Salary: ${salary} | DepartmentId: ${department_id}`);
     });
-        
-    })
+    console.log('--------');
+    console.log('\n');    
+  });
+  start();
 };

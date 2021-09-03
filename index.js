@@ -141,6 +141,9 @@ const addRole = () => {
         });
 };
 
+const addDepartment = () => {
+    
+}
 const viewAll = () => {
     
 }

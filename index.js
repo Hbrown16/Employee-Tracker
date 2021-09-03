@@ -163,6 +163,9 @@ const addDepartment = () => {
                 });
         });
 };
+
 const viewAll = () => {
-    
+    connection.query('SELECT * FROM employee', (err,res) => {
+        
+    })    
 }

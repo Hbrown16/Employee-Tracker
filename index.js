@@ -82,5 +82,7 @@ const addEmployee = () => {
              ]
          },
      ])
-     .
+     .then((answer) => {
+         const query = 'INSERT INTO employee SET?';
+     })
 }

@@ -207,5 +207,8 @@ const deleteEmployee = () {
             message: 'Type you would like to delete',
         }
     ])
+        .then((answer) => {
+    const query = 'DELETE FROM employee WHERE ?';
     
+        })
 }

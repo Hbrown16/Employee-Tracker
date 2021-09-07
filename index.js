@@ -196,3 +196,7 @@ const viewAll = () => {
   });
   start();
 };
+
+const deleteEmployee = () {
+    
+}

@@ -200,4 +200,12 @@ const viewAll = () => {
 const deleteEmployee = () {
     console.log('Employee delete..\n');
     inquirer
+    .prompt([
+        {
+            name: 'delete',
+            type: 'input',
+            message: 'Type you would like to delete',
+        }
+    ])
+    
 }

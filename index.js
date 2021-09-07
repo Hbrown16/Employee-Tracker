@@ -214,7 +214,8 @@ const deleteEmployee = () {
             first_name: answer.deletion,
         },
         (err) => {
-            
+           if (err) throw err;
+           console.log(`deleted....`); 
         }
         )
 

@@ -222,6 +222,7 @@ const deleteEmployee = () {
     });
 };
 
-const updateRole = ( => {
-    console.log
-})
+const updateRole = () => {
+    console.log('Update employees role...\n');
+    inquirer
+}

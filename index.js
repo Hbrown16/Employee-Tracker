@@ -198,5 +198,6 @@ const viewAll = () => {
 };
 
 const deleteEmployee = () {
-    
+    console.log('Employee delete..\n');
+    inquirer
 }

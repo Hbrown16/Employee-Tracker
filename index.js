@@ -209,6 +209,14 @@ const deleteEmployee = () {
     ])
         .then((answer) => {
     const query = 'DELETE FROM employee WHERE ?';
-    
+    connection.query(query,
+        {
+            first_name: answer.deletion,
+        },
+        (err) => {
+            
+        }
+        )
+
         })
 }

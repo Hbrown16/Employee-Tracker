@@ -216,8 +216,8 @@ const deleteEmployee = () {
         (err) => {
            if (err) throw err;
            console.log(`deleted....`); 
-        }
-        )
-
-        })
-}
+           console.log('\n');
+           start();
+        });
+    });
+};

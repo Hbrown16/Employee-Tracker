@@ -221,3 +221,7 @@ const deleteEmployee = () {
         });
     });
 };
+
+const updateRole = ( => {
+    console.log
+})

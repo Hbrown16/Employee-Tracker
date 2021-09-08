@@ -245,5 +245,9 @@ const updateRole = () => {
            message: 'Type name of Employee you would like to update' 
         }
     ])
-    
+        .then((answer) => {
+    const query = 'Update employee SET and WHERE?';
+    connection.query(query,
+        )
+        })
 }

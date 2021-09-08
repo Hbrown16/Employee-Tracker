@@ -258,8 +258,9 @@ const updateRole = () => {
         ],
         (err) => {
             if (err) throw err;
-            console.log
-        }
-        )
-        })
-}
+            console.log(`update complete....`);
+            console.log(`\n`);
+            start();
+        });
+    });
+};

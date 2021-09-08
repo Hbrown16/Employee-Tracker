@@ -256,7 +256,10 @@ const updateRole = () => {
             first_name: answer.firstName
         }
         ],
-        (err)
+        (err) => {
+            if (err) throw err;
+            console.log
+        }
         )
         })
 }

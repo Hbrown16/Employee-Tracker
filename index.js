@@ -240,7 +240,10 @@ const updateRole = () => {
             ]
         },
         {
-            
+           name: 'firstName',
+           type: 'input',
+           message: 'Type name of Employee you would like to update' 
         }
     ])
+    
 }

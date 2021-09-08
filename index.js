@@ -230,7 +230,7 @@ const updateRole = () => {
             name: 'updateRoleId',
             type: 'list',
             message: 'What would you like to update their role to?'
-            choice: [
+            choices: [
                 'Application Developer',
                 'Cyber Security Analyst',
                 'IT Specialist',

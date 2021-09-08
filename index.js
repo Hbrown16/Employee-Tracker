@@ -248,6 +248,15 @@ const updateRole = () => {
         .then((answer) => {
     const query = 'Update employee SET and WHERE?';
     connection.query(query,
+        [
+        {
+            role_id: answer.updateRoleId,
+        },
+        {
+            first_name: answer.firstName
+        }
+        ],
+        (err)
         )
         })
 }

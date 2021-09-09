@@ -13,3 +13,13 @@ CREATE TABLE department (
     name VARCHAR(30) NOT NULL,
     PRIMARY KEY (id)
 );
+
+-- Create table for role
+-- table of employees parent
+
+CREATE TABLE employeeRole (
+    id INTEGER NOT NULL AUTO_INCREMENT,
+    title VARCHAR(30) NOT NULL,
+    salary DECIMAL(10,2) NOT NULL,
+    
+)

@@ -53,3 +53,8 @@ INSERT INTO department (department_name)
 VALUES('Application Developer'), ('Cyber Security Analyst'),('IT Specialist'), ('Software Developer'),
 ('Hardware Developer'), ('Manager');
 
+INSERT INTO employeeRole (title, salary, department_id)
+VALUES ('Application Developer', '200000', 1), ('Cyber Security Analyst', '100000', 2),('IT Specialist', '72500', 3), ('Software Developer', '90000', 4),
+('Hardware Developer', '50000', 5), ('Manager', '120000', 6);
+
+INSERT INTO

@@ -23,6 +23,8 @@ CREATE TABLE employeeRole (
     salary DECIMAL(10,2) NOT NULL,
     department_id INTEGER NULL,
     PRIMARY KEY (id),
-    CONSTRAINT FK_department_id FORGEIN KEY (department_id),
-    
-)
+    CONSTRAINT FK_department_id FORGEIN KEY (department_id)
+    REFERENCES department(id)
+    ON DELETE SET NULL
+    ON UPDATE CASECADE
+);

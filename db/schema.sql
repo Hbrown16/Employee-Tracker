@@ -57,4 +57,5 @@ INSERT INTO employeeRole (title, salary, department_id)
 VALUES ('Application Developer', '200000', 1), ('Cyber Security Analyst', '100000', 2),('IT Specialist', '72500', 3), ('Software Developer', '90000', 4),
 ('Hardware Developer', '50000', 5), ('Manager', '120000', 6);
 
-INSERT INTO
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
+VALUES ('Steve', 'Jobs', 1, NULL), ('Lynn', 'Cobb', 2, NULL), ('Jose', 'Diaz', 5, NULL), ('Haley', 'Little', 4, NULL), ('Thor', 'Loki', 3, NULL);

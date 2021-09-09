@@ -47,3 +47,9 @@ CREATE TABLE employee (
     ON DELETE SET NULL
     ON UPDATE CASCADE
 );
+
+-- Insert test data
+INSERT INTO department (department_name)
+VALUES('Application Developer'), ('Cyber Security Analyst'),('IT Specialist'), ('Software Developer'),
+('Hardware Developer'), ('Manager');
+

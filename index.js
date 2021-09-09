@@ -197,7 +197,7 @@ const viewAll = () => {
   start();
 };
 
-const deleteEmployee = () {
+const deleteEmployee = () => {
     console.log('Employee delete..\n');
     inquirer
      .prompt([
@@ -207,7 +207,7 @@ const deleteEmployee = () {
             message: 'Type you would like to delete',
         }
     ])
-        .then((answer) => {
+    .then((answer) => {
     const query = 'DELETE FROM employee WHERE ?';
     connection.query(query,
         {

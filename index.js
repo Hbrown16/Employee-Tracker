@@ -1,6 +1,4 @@
 const inquirer = require('inquirer');
-const { type } = require('os');
-const { start } = require('repl');
 const connection = require('./config/connect');
 
 

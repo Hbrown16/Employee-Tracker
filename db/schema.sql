@@ -9,7 +9,7 @@ USE employee_db;
 
 -- Creates table for department
 CREATE TABLE department (
-    id INTERGER NOT NULL AUTO_INCREMENT,
+    id INTEGER NOT NULL AUTO_INCREMENT,
     name VARCHAR(30) NOT NULL,
     PRIMARY KEY (id)
 );
@@ -23,7 +23,7 @@ CREATE TABLE employeeRole (
     salary DECIMAL(10,2) NOT NULL,
     department_id INTEGER NULL,
     PRIMARY KEY (id),
-    CONSTRAINT FK_department_id FORGEIN KEY (department_id)
+    CONSTRAINT FK_department_id FOREIGN KEY (department_id)
     REFERENCES department(id)
     ON DELETE SET NULL
     ON UPDATE CASCADE
@@ -38,7 +38,7 @@ CREATE TABLE employee (
     role_id INTEGER NULL,
     manager_id INTEGER NULL,
     PRIMARY KEY (id),
-    CONSTRAINT FK_role_id FORGEIN KEY (role_id)
+    CONSTRAINT FK_role_id FOREIGN KEY (role_id)
     REFERENCES employeeRole(id)
     ON DELETE SET NULL
     ON UPDATE CASCADE,

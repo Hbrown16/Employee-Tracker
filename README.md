@@ -18,7 +18,7 @@
 ## Application Links
 
 [Deployed Link]()
-[Github Repo Link]()
+[Github Repo Link](https://github.com/Hbrown16/Employee-Tracker)
 
 ## Demo Video
 [Video Link]()

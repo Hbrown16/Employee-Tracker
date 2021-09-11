@@ -49,7 +49,7 @@ CREATE TABLE employee (
 );
 
 -- Insert test data
-INSERT INTO department (department_name)
+INSERT INTO department (name)
 VALUES('Application Developer'), ('Cyber Security Analyst'),('IT Specialist'), ('Software Developer'),
 ('Hardware Developer'), ('Manager');
 

@@ -1,16 +1,17 @@
 require('dotenv').config();
-const mysql = require('mysql');
+const {createConnection} = require('mysql')
 
-const connection = mysql.createConnection({
+const connection = createConnection({
     host: 'localhost',
 
-    port: 3306,
+    PORT: 3306,
 
-    user: process.env.user,
+    user: process.env.DB_USER,
 
-    password: process.env.password,
-    database: process.env.database,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
 });
 
-module.exports = mysql;
+// export default mysql;
+// export default connection;
 module.exports = connection;

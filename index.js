@@ -25,7 +25,7 @@ const start = () => {
     })
     .then((answer) => {
         switch (answer.action) {
-           case "Add Employees":
+           case "Add Employee":
                addEmployee();
                break; 
            case 'Add Roles':
@@ -47,7 +47,7 @@ const start = () => {
                connection.end();
                break;
            default:
-               console.log(`Inadequte Action: ${answer.action}`);                  
+            //    console.log(`Inadequte Action: ${answer.action}`);                  
 
         }
     });
@@ -69,14 +69,14 @@ const addEmployee = () => {
          {
              name: 'roleId',
              type: 'list',
-             message: 'What is the role of the employee?',
+             message: 'What is the role of the employee? 1 is Application Developer, 2 is Cyber Security Analyst, 3 is IT Specialist, 4 is Software Dev, 5 is Hardware Dev, 6 is Manager',
              choices: [
-                 'Application Developer',
-                 'Cyber Security Analyst',
-                 'IT Specialist',
-                 'Software Developer',
-                 'Hardware Developer',
-                 'Manager',
+                 '1',
+                 '2',
+                 '3',
+                 '4',
+                 '5',
+                 '6',
              ]
          },
      ])
@@ -85,7 +85,7 @@ const addEmployee = () => {
          connection.query(query,
             {
                 first_name: answer.firstName,
-                lst_name: answer.lastName,
+                last_name: answer.lastName,
                 role_id: answer.roleId,
             },
             (err) => {
@@ -112,20 +112,20 @@ const addRole = () => {
             {
                 name: 'departmentId',
                 type: 'list',
-                message: 'What is their department',
+                message: 'What is their department? 1 is App Dev, 2 is Cyber Sec, 3 is IT, 4 is Software, 5 is Hardware 6 ish Manager',
                 choices: [
-                    'Application Developer',
-                    'Cyber Security Analyst',
-                    'IT Specialist',
-                    'Software Developer',
-                    'Hardware Developer',
-                    'Manager',
+                    '1',
+                    '2',
+                    '3',
+                    '4',
+                    '5',
+                    '6',
                 ]
             }, 
         ])
         .then((answer) => {
             const query = 'INSERT INTO employeeRole SET?';
-            connnection.query(query,
+            connection.query(query,
                 {
                     title: answer.title,
                     salary: answer.salary,
@@ -167,8 +167,8 @@ const viewAll = () => {
         if (err) throw err;
         console.log('\n');
         console.log('----Employees----');
-        res.forEach(({first_name, lst_name, role_id}) => {
-            console.log(`FirstName: ${first_name} | LstName: ${lst_name} | RoleId: ${role_id}`);
+        res.forEach(({first_name, last_name, role_id}) => {
+            console.log(`FirstName: ${first_name} | LastName: ${last_name} | RoleId: ${role_id}`);
         });
         console.log('--------');
     });
@@ -176,8 +176,8 @@ const viewAll = () => {
         if (err) throw err;
         console.log('\n');;
         console.log('----Departments----');
-        res.forEach(({ department_name}) => {
-            console.log(`DepartmentName: ${deparment_name}`);
+        res.forEach(({ name}) => {
+            console.log(`DepartmentName: ${name}`);
         });
         console.log('--------');
         console.log('\n');

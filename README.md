@@ -21,7 +21,7 @@
 [Github Repo Link](https://github.com/Hbrown16/Employee-Tracker)
 
 ## Demo Video
-[Video Link]()
+[Video Link](https://watch.screencastify.com/v/olVJW5UgMDaMvHZ6KPh4)
 
 ## Requirements
 Design the following database schema containing three tables:
